@@ -9,7 +9,7 @@ import Foundation
 class MenuViewViewModel: ObservableObject{
     //Food menu items
     @Published var MockFoodMenuItems: [MenuItem] = [
-        MenuItem(price: 30.0, title: "Food 1", menuCategory: .food, ordersCount: 10, ingredient: [.tomatoSauce, .carrot]),
+        MenuItem(price: 30.0, title: "Food 1", menuCategory: .food, ordersCount: 10, ingredient:[.tomatoSauce, .broccoli, .carrot, .pasta, .spinach, .carrot]),
         MenuItem(price: 10.0, title: "Food 2", menuCategory: .food, ordersCount: 5, ingredient: [.pasta]),
         MenuItem(price: 15.0, title: "Food 3", menuCategory: .food, ordersCount: 6, ingredient: [.broccoli, .carrot]),
         MenuItem(price: 25.0, title: "Food 4", menuCategory: .food, ordersCount: 2, ingredient: [.spinach]),
