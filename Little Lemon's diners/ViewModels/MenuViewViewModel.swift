@@ -19,7 +19,7 @@ class MenuViewViewModel: ObservableObject{
         MenuItem(price: 22.0, title: "Food 8", menuCategory: .food, ordersCount: 8, ingredient: [.tomatoSauce,.spinach]),
         MenuItem(price: 23.0, title: "Food 9", menuCategory: .food, ordersCount: 6, ingredient: [.tomatoSauce, .broccoli]),
         MenuItem(price: 19.0, title: "Food 10", menuCategory: .food, ordersCount: 4, ingredient: [.tomatoSauce, .pasta]),
-        MenuItem(price: 86.0, title: "Food 11", menuCategory: .food, ordersCount: 2, ingredient: [.tomatoSauce, .carrot]),
+        MenuItem(price: 86.0, title: "Food 11", menuCategory: .food, ordersCount: 2, ingredient: [.tomatoSauce]),
         MenuItem(price: 50.5, title: "Food 12", menuCategory: .food, ordersCount: 3, ingredient: [.tomatoSauce, .carrot])
 
     ]
