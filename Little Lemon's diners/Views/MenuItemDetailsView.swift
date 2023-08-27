@@ -26,14 +26,15 @@ struct MenuItemDetailsView: View {
                     Text("\(MenuItem.ordersCount)")
                 }.padding(1)
                 
-                
-                VStack{
-                    Text("Ingredient:").font(.title3).fontWeight(.bold)
-                    ForEach(MenuItem.ingredient, id: \.self) {
-                                          Text($0.rawValue)
-                                      }
-                    
-                }.padding(1)
+                if(MenuItem.ingredient.count>0){
+                    VStack{
+                        Text("Ingredient:").font(.title3).fontWeight(.bold)
+                        ForEach(MenuItem.ingredient, id: \.self) {
+                            Text($0.rawValue)
+                        }
+                    }.padding(1)
+                }
+                Spacer()
             }
             .navigationTitle(MenuItem.menuCategory.rawValue)
             .padding([.leading, .trailing], 60)
